@@ -1,16 +1,22 @@
 .features {
-  padding: 105px 0 90px;
+  padding: 105px 0 114px;
+
   background-color: rgba($color-gray, 0.15);
   &__title {
     margin: 0 0 45px 0;
+
     text-align: center;
-    font-size: 2rem;
+
     font-family: $font-header;
+    font-size: 2rem;
   }
   &__description {
     margin: 0 0 105px 0;
+
     text-align: center;
+
     color: $color-gray;
+
     font-family: $font-main;
   }
   &-item {
@@ -20,42 +26,54 @@
     &__description {
       text-align: center;
       span {
-        font-family: $font-main;
         color: $color-gray;
+
+        font-family: $font-main;
         line-height: 20px;
       }
     }
     &__title {
       margin: 3px 0 7px 0;
+
+      color: $color-dark;
+
       font-family: $font-header;
       font-size: 1.75em;
-      color: $color-dark;
     }
     i {
-      // position: absolute;
-      font-size: 2rem;
-      color: $color-light;
       z-index: 10;
+
+      color: $color-light;
+      // position: absolute;
+
+      font-size: 2rem;
     }
   }
   &__hexagon {
     position: relative;
+
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
     width: 80px;
     height: 45px;
-    background-color: $color-accent;
     margin-bottom: 80px;
+
+    background-color: $color-accent;
     &:nth-of-type(2) {
       position: absolute;
-      transform: rotate(60deg);
+
       width: 79px;
+
+      transform: rotate(60deg);
     }
     &:nth-of-type(3) {
       position: absolute;
-      transform: rotate(-60deg);
+
       width: 79px;
+
+      transform: rotate(-60deg);
     }
     // &::before {
     //   content: "";

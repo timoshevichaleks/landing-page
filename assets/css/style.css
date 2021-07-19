@@ -123,7 +123,7 @@ html {
 }
 
 .features {
-  padding: 105px 0 90px;
+  padding: 105px 0 114px;
   background-color: rgba(84, 84, 84, 0.15);
 }
 .features__title {
@@ -202,4 +202,128 @@ html {
       -ms-transform: rotate(-60deg);
           transform: rotate(-60deg);
   width: 79px;
+}
+
+.gallery {
+  padding: 105px 0 90px;
+  min-height: 100vh;
+}
+.gallery__title {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  color: #010101;
+  margin: 0 0 45px 0;
+}
+.gallery__description {
+  margin: 0 0 45px 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #545454;
+}
+.gallery-content {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery-article {
+  padding: 0 5px 10px 5px;
+}
+.gallery-item__wrapper {
+  position: relative;
+  min-height: 210px;
+  max-height: 33.33vh;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.gallery-item__wrapper:hover .gallery-image, .gallery-item__wrapper:focus .gallery-image {
+  -webkit-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
+}
+.gallery-item__wrapper:hover .gallery-item__caption h5, .gallery-item__wrapper:focus .gallery-item__caption h5 {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  bottom: 30px;
+}
+.gallery-item__wrapper:hover .gallery-item__caption i, .gallery-item__wrapper:focus .gallery-item__caption i {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  top: 30px;
+}
+.gallery-item__caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.gallery-item__caption:hover, .gallery-item__caption:focus {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(1, 1, 1, 0.8);
+}
+.gallery-item__caption h5 {
+  margin: 0;
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  text-align: center;
+  color: #fefefe;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  width: 100%;
+}
+.gallery-item__caption i {
+  top: -50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fefefe;
+  background-color: #ee3b24;
+  width: 45px;
+  height: 45px;
+}
+.gallery-image {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  width: 100%;
+}
+.gallery-image:hover, .gallery-image:focus {
+  -webkit-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.blog {
+  padding: 105px 0 114px;
+  background-color: rgba(84, 84, 84, 0.15);
+  min-height: 100vh;
 }

@@ -1,27 +1,32 @@
 .about {
   padding: 105px 0 90px;
   &-title {
-    text-align: center;
     margin: 0 0 45px 0;
+
+    text-align: center;
+
+    color: $color-dark;
+
     font-family: $font-header;
     font-size: 2rem;
-    color: $color-dark;
   }
   &-progress {
     &__title {
+      font-family: $font-header;
       font-size: 1.125rem;
-      font-family: $font-header
     }
     &__block {
       margin-bottom: 30px;
     }
   }
   p {
-    font-family: $font-main;
     color: $color-gray;
+
+    font-family: $font-main;
   }
   &-progress-bar__danger {
-    font-family: $font-main;
     background-color: $color-accent;
+
+    font-family: $font-main;
   }
 }
