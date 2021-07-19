@@ -21,8 +21,24 @@
 }
 
 .nav-link {
+  position: relative;
   color: $color-light !important;
   padding: 15px 7.5px !important;
   font-family: $font-main;
   font-size: $font-size;
+  &::after {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 3px;
+  }
+  &:hover {
+    &::after {
+      background-color: $color-light;
+      bottom: 10px;
+      transition: .5s;
+    }
+  }
 }
