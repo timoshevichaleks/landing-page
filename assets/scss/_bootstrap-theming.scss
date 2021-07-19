@@ -1,0 +1,28 @@
+.navbar {
+  padding: 15px 0;
+  background: transparent;
+  &-collapse {
+    justify-content: flex-end;
+    ul {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: $font-main;
+  color: $color-light !important;
+}
+
+.nav-item {
+  padding: 0 7.5px;
+}
+
+.nav-link {
+  color: $color-light !important;
+  padding: 15px 7.5px !important;
+  font-family: $font-main;
+  font-size: $font-size;
+}

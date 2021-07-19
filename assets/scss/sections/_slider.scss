@@ -1,0 +1,24 @@
+.carousel-item {
+  position: relative;
+  //   background-position: 50% 50%;
+  //   background-size: cover;
+}
+
+.slide-title {
+  font-size: 1.75rem;
+  font-family: $font-header;
+}
+
+.slide-description {
+  font-family: $font-main;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-overlay {
+  @include abs-position;
+}
