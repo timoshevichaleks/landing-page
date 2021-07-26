@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* xl */
 /* lg */
 /* md */
@@ -51,6 +52,10 @@
   background-color: #fefefe;
 }
 
+.form-control {
+  font-family: "Roboto", sans-serif;
+}
+
 .header {
   position: relative;
 }
@@ -63,10 +68,34 @@
 }
 
 html {
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+
+.contacts--button {
+  border: 1px solid #ee3b24;
+  color: #ee3b24;
+  font-family: "Roboto Slab", serif;
+}
+.contacts--button:hover, .contacts--button:focus {
+  background-color: #ee3b24;
+  color: #fefefe;
+}
+
+.section__title {
+  margin: 0 0 45px 0;
+  text-align: center;
+  color: #010101;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+}
+.section__description {
+  margin: 0 0 45px 0;
+  text-align: center;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
 }
 
 .carousel-item {
@@ -329,26 +358,26 @@ html {
   background-color: rgba(84, 84, 84, 0.1);
 }
 .blog__title {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Roboto Slab", serif;
-  color: #010101;
   margin: 0 0 45px 0;
+  text-align: center;
+  color: #010101;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
 }
 .blog__description {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: #545454;
   margin: 0 0 45px 0;
+  text-align: center;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
 }
 .blog-row {
   padding: 0 15px;
 }
 .blog-item:hover .blog-item__content, .blog-item:focus .blog-item__content {
-  background-color: #ee3b24;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  background-color: #ee3b24;
 }
 .blog-item:hover .blog-item__title,
 .blog-item:hover .blog-item__date,
@@ -375,46 +404,46 @@ html {
   overflow: hidden;
 }
 .blog-item__image img {
+  width: 100%;
+  height: 100%;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  width: 100%;
-  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .blog-item__content {
-  background-color: #fefefe;
-  padding: 15px;
   height: 100%;
+  padding: 15px;
+  background-color: #fefefe;
 }
 .blog-item__title {
+  margin: 0 0 8px 0;
   color: #010101;
   font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
-  margin: 0 0 8px 0;
 }
 .blog-item__date {
-  font-size: 0.875rem;
+  margin: 15px 0;
   color: rgba(84, 84, 84, 0.87);
   font-family: "Roboto", sans-serif;
-  margin: 15px 0;
+  font-size: 0.875rem;
 }
 .blog-item__description {
-  font-size: 0.875rem;
+  margin: 15px 0 0 0;
   color: #545454;
   font-family: "Roboto", sans-serif;
-  margin: 15px 0 0 0;
+  font-size: 0.875rem;
 }
 
 .advantages-container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .advantages__image {
   min-height: 100vh;
@@ -422,32 +451,32 @@ html {
   background-size: cover;
 }
 .advantages-content {
-  padding: 105px 15px 90px;
-  background-color: rgba(84, 84, 84, 0.2);
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 105px 15px 90px;
+  background-color: rgba(84, 84, 84, 0.2);
 }
 .advantages-content__title {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Roboto Slab", serif;
-  color: #010101;
   margin: 0 0 45px 0;
+  text-align: center;
+  color: #010101;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
 }
 .advantages-content__text {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: #545454;
   margin: 0 0 45px 0;
+  text-align: center;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
 }
 .advantages-content__block {
   padding: 0;
@@ -463,35 +492,83 @@ html {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+  margin-top: -6px;
+  text-align: center;
   color: #ee3b24;
   font-size: 2.75rem;
-  text-align: center;
-  margin-top: -6px;
 }
 .advantages-item__icon i {
   width: 60px;
 }
 .advantages-item__title {
-  font-size: 1.5rem;
-  font-family: "Roboto Slab", serif;
   color: #010101;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
 }
 .advantages-item__text {
-  font-family: "Roboto", sans-serif;
   color: #545454;
+  font-family: "Roboto", sans-serif;
 }
 
 .contacts {
-  min-height: 100vh;
+  padding: 105px 0 90px;
+  color: #fefefe;
 }
 
+.footer {
+  font-size: 0.875rem;
+  background-color: #272727;
+}
+.footer-top {
+  padding: 45px 0 30px;
+}
+.footer__title {
+  color: #cbcbcb;
+  font-size: 1.75rem;
+  font-family: "Roboto Slab", serif;
+}
+.footer__title::first-letter {
+  color: #ee3b24;
+}
+.footer__list {
+  padding-left: 30px;
+  list-style: none;
+}
+.footer__item {
+  position: relative;
+  line-height: 1.45;
+}
+.footer__item::before {
+  position: absolute;
+  margin-left: -30px;
+  content: "";
+  color: #b2b2b2;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.footer p {
+  color: #adadad;
+  font-family: "Roboto", sans-serif;
+}
+.footer a {
+  font-family: "Roboto", sans-serif;
+  color: #adadad;
+}
+.footer a:hover, .footer a:focus {
+  color: #fefefe;
+  text-decoration: none;
+}
+.footer-copyright {
+  padding: 29px 0 30px;
+  text-align: center;
+  background-color: #333333;
+}
 @media (min-width: 1200px) {
   .advantages-content > .row {
     margin-right: 15px;
     margin-left: 15px;
   }
 }
-
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .advantages-content > .row {
     margin-right: 0;

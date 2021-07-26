@@ -5,3 +5,37 @@ html {
   font-family: $font-main;
   font-size: $font-size;
 }
+
+.contacts--button {
+  color: $color-accent;
+  border: 1px solid $color-accent;
+
+  font-family: $font-header;
+  &:hover,
+  &:focus {
+    color: $color-light;
+    background-color: $color-accent;
+  }
+}
+
+.section {
+  &__title {
+    margin: 0 0 45px 0;
+
+    text-align: center;
+
+    color: $color-dark;
+
+    font-family: $font-header;
+    font-size: 2rem;
+  }
+  &__description {
+    margin: 0 0 45px 0;
+
+    text-align: center;
+
+    color: $color-gray;
+
+    font-family: $font-main;
+  }
+}

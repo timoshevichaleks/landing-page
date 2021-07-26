@@ -1,0 +1,62 @@
+.footer {
+  background-color: darken($color-gray, 17.5%);
+
+  font-size: 0.875rem;
+  &-top {
+    padding: 45px 0 30px;
+  }
+  &__title {
+    color: darken($color-light, 20%);
+
+    font-family: $font-header;
+    font-size: 1.75rem;
+    &::first-letter {
+      color: $color-accent;
+    }
+  }
+  &__list {
+    padding-left: $gap * 2;
+
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+
+    line-height: 1.45;
+    &::before {
+      position: absolute;
+
+      margin-left: -30px;
+
+      content: "\f30b";
+
+      color: darken($color-light, 30%);
+
+      font-family: $font-icon;
+      font-weight: 900;
+    }
+  }
+  p {
+    color: lighten($color-gray, 35%);
+
+    font-family: $font-main;
+  }
+  a {
+    color: lighten($color-gray, 35%);
+
+    font-family: $font-main;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      color: $color-light;
+    }
+  }
+  &-copyright {
+    padding: 29px 0 30px;
+
+    text-align: center;
+
+    background-color: darken($color-gray, 13%);
+  }
+}
