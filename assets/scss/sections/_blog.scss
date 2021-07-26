@@ -1,19 +1,26 @@
 .blog {
   min-height: 100vh;
-  padding: 105px 0 114px;
+  padding: 105px 0 90px;
+
   background-color: rgba($color-gray, 0.1);
   &__title {
-    text-align: center;
-    font-size: 2rem;
-    font-family: $font-header;
-    color: $color-dark;
     margin: 0 0 45px 0;
+
+    text-align: center;
+
+    color: $color-dark;
+
+    font-family: $font-header;
+    font-size: 2rem;
   }
   &__description {
-    text-align: center;
-    font-family: $font-main;
-    color: $color-gray;
     margin: 0 0 45px 0;
+
+    text-align: center;
+
+    color: $color-gray;
+
+    font-family: $font-main;
   }
   &-row {
     padding: 0 15px;
@@ -22,13 +29,15 @@
     &:hover,
     &:focus {
       .blog-item__content {
-        background-color: $color-accent;
         transition: 0.3s;
+
+        background-color: $color-accent;
       }
       .blog-item__title,
       .blog-item__date,
       .blog-item__description {
         transition: 0.3s;
+
         color: $color-light;
       }
       .blog-item__image img {
@@ -46,34 +55,43 @@
     &__image {
       overflow: hidden;
       img {
-        transition: transform 0.5s;
         width: 100%;
         height: 100%;
+
+        transition: transform 0.5s;
+
         object-fit: contain;
       }
     }
     &__content {
-      background-color: $color-light;
-      padding: 15px;
       height: 100%;
+      padding: 15px;
+
+      background-color: $color-light;
     }
     &__title {
+      margin: 0 0 8px 0;
+
       color: $color-dark;
+
       font-family: $font-header;
       font-size: 1.125rem;
-      margin: 0 0 8px 0;
     }
     &__date {
-      font-size: 0.875rem;
-      color: rgba($color-gray, 0.87);
-      font-family: $font-main;
       margin: 15px 0;
+
+      color: rgba($color-gray, 0.87);
+
+      font-family: $font-main;
+      font-size: 0.875rem;
     }
     &__description {
-      font-size: 0.875rem;
-      color: $color-gray;
-      font-family: $font-main;
       margin: 15px 0 0 0;
+
+      color: $color-gray;
+
+      font-family: $font-main;
+      font-size: 0.875rem;
     }
   }
 }

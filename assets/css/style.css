@@ -64,6 +64,7 @@
 
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -324,7 +325,7 @@ html {
 
 .blog {
   min-height: 100vh;
-  padding: 105px 0 114px;
+  padding: 105px 0 90px;
   background-color: rgba(84, 84, 84, 0.1);
 }
 .blog__title {
@@ -406,4 +407,94 @@ html {
   color: #545454;
   font-family: "Roboto", sans-serif;
   margin: 15px 0 0 0;
+}
+
+.advantages-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.advantages__image {
+  min-height: 100vh;
+  background-position: 33% 50%;
+  background-size: cover;
+}
+.advantages-content {
+  padding: 105px 15px 90px;
+  background-color: rgba(84, 84, 84, 0.2);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+.advantages-content__title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  color: #010101;
+  margin: 0 0 45px 0;
+}
+.advantages-content__text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #545454;
+  margin: 0 0 45px 0;
+}
+.advantages-content__block {
+  padding: 0;
+}
+.advantages-item {
+  margin: 0 0 15px 0;
+}
+.advantages-item > .row {
+  margin: 0;
+}
+.advantages-item__icon {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  color: #ee3b24;
+  font-size: 2.75rem;
+  text-align: center;
+  margin-top: -6px;
+}
+.advantages-item__icon i {
+  width: 60px;
+}
+.advantages-item__title {
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
+  color: #010101;
+}
+.advantages-item__text {
+  font-family: "Roboto", sans-serif;
+  color: #545454;
+}
+
+.contacts {
+  min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .advantages-content > .row {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1199.8px) and (min-width: 992px) {
+  .advantages-content > .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
