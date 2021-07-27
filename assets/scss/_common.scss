@@ -6,6 +6,10 @@ html {
   font-size: $font-size;
 }
 
+body {
+  position: relative;
+}
+
 .contacts--button {
   color: $color-accent;
   border: 1px solid $color-accent;
@@ -37,5 +41,32 @@ html {
     color: $color-gray;
 
     font-family: $font-main;
+  }
+}
+
+.back2top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  padding: 13px 15.5px 8px 15.5px;
+
+  transition: 0.4s;
+
+  border-radius: 3px;
+  background-color: rgba($color-dark, 0.2);
+
+  font-size: 1rem;
+  i {
+    color: rgba($color-light, 0.25);
+  }
+  &:hover,
+  &:focus {
+    padding: 3px 15.5px 18px 15.5px;
+
+    background-color: rgba($color-dark, 1);
+    i {
+      color: rgba($color-light, 1);
+    }
   }
 }

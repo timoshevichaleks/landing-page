@@ -1,11 +1,14 @@
 .features {
-  padding: 105px 0 114px;
+  // padding: 105px 0 114px;
+  padding: 160px 0 122px;
 
   background-color: rgba($color-gray, 0.15);
   &__title {
-    margin: 0 0 45px 0;
+    margin: 0 0 44px 0;
 
     text-align: center;
+
+    color: $color-dark;
 
     font-family: $font-header;
     font-size: 2rem;

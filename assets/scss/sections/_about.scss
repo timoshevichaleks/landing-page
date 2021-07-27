@@ -1,5 +1,9 @@
 .about {
-  padding: 105px 0 90px;
+  padding: 138px 0 122px;
+
+  @include xl-min {
+    padding: 105px 0 90px;
+  }
   &-title {
     margin: 0 0 45px 0;
 
