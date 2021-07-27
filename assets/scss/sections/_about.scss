@@ -1,9 +1,10 @@
 .about {
-  padding: 138px 0 122px;
-
-  @include xl-min {
+  @include lg-min {
     padding: 105px 0 90px;
   }
+  // @include xl-lg {
+  //   padding: 138px 0 122px;
+  // }
   &-title {
     margin: 0 0 45px 0;
 

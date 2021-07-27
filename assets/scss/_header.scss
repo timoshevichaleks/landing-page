@@ -6,7 +6,11 @@
   left: 0;
 
   transition: 0.5s;
+
+  @include lg {
+    background-color: rgba($color-dark, 0.8);
+  }
   &-scroll {
-    background-color: $color-dark;
+    background-color: rgba($color-dark, 0.8);
   }
 }

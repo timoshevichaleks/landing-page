@@ -4,6 +4,10 @@
   transition: 0.5s;
 
   background: transparent;
+
+  @include lg {
+    padding: 8px 0;
+  }
   &-collapse {
     justify-content: flex-end;
     ul {
@@ -12,6 +16,10 @@
   }
   &-scroll {
     padding: 0;
+
+    @include lg {
+      padding: 8px 0;
+    }
   }
   .active-link {
     .nav-link {
@@ -53,15 +61,28 @@
 
   font-family: $font-main;
   font-size: $font-size;
+
+  @include lg {
+    text-align: center;
+  }
   &::after {
     position: absolute;
     bottom: 0;
-    left: 0;
 
-    width: 100%;
     height: 3px;
 
     content: "";
+
+    @include lg-min {
+      left: 0;
+
+      width: 100%;
+    }
+    @include lg {
+      left: 25% !important;
+
+      width: 50% !important;
+    }
   }
   &:hover {
     &::after {
@@ -78,4 +99,13 @@
   font-family: $font-main;
 }
 
-// .nav-item:nth-of-type(1)
+.navbar-light .navbar-toggler {
+  border-color: $color-light;
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}

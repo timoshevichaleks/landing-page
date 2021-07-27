@@ -1,6 +1,9 @@
 .gallery {
   min-height: 100vh;
-  padding: 105px 0 90px;
+
+  @include lg-min {
+    padding: 105px 0 90px;
+  }
   &__title {
     margin: 0 0 45px 0;
 
