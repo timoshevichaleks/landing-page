@@ -68,6 +68,8 @@
       }
       .blog-item__image img {
         transform: scale(1.25);
+
+        filter: saturate(1.5);
       }
     }
     &__block {
@@ -82,10 +84,10 @@
       overflow: hidden;
       img {
         width: 100%;
-        height: 100%;
 
-        transition: transform 0.5s;
+        transition: filter 0.5s, transform 0.5s;
 
+        filter: saturate(0.75);
         @include md {
           margin-top: -10%;
           margin-bottom: -35%;
