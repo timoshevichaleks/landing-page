@@ -12,5 +12,23 @@
   }
   &-scroll {
     background-color: rgba($color-dark, 0.85);
+    .active-link {
+      .nav-link {
+        color: $color-accent !important;
+        text-shadow: 0 0 1px $color-accent;
+        &::after {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+
+          width: 100%;
+          height: 3px;
+
+          content: "";
+
+          background-color: $color-accent;
+        }
+      }
+    }
   }
 }
