@@ -39,4 +39,10 @@
     filter: ':not(.navbar-brand)'
   });
 
+  AOS.init({
+    disable: 'mobile',
+    duration: 600,
+    easing: 'ease-in-sine'
+  });
+
 })(jQuery);
