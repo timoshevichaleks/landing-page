@@ -8,9 +8,9 @@
   transition: 0.5s;
 
   @include lg {
-    background-color: rgba($color-dark, 0.8);
+    background-color: rgba($color-dark, 0.85);
   }
   &-scroll {
-    background-color: rgba($color-dark, 0.8);
+    background-color: rgba($color-dark, 0.85);
   }
 }

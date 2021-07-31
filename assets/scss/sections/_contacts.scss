@@ -1,5 +1,16 @@
 .contacts {
-  padding: 105px 0 90px;
-
   color: $color-light;
+
+  @include lg-min {
+    padding: 105px 0 74px;
+  }
+  @include lg-md {
+    padding: 104px 0 59px;
+  }
+  @include md-sm {
+    padding: 90px 0 44px;
+  }
+  @include sm {
+    padding: 90px 0 29px;
+  }
 }

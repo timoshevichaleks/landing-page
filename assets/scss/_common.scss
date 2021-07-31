@@ -11,10 +11,13 @@ body {
 }
 
 .contacts--button {
+  width: 100%;
+
   color: $color-accent;
   border: 1px solid $color-accent;
+  border-radius: 0.3rem;
 
-  font-family: $font-header;
+  font-family: $font-main;
   &:hover,
   &:focus {
     color: $color-light;
@@ -32,6 +35,16 @@ body {
 
     font-family: $font-header;
     font-size: 2rem;
+
+    @include lg-md {
+      margin: 0 0 39px 0;
+    }
+    @include md-sm {
+      margin: 0 0 30px 0;
+    }
+    @include sm {
+      margin: 0 0 22px 0;
+    }
   }
   &__description {
     margin: 0 0 45px 0;
@@ -41,6 +54,10 @@ body {
     color: $color-gray;
 
     font-family: $font-main;
+
+    @include md {
+      margin: 0 0 30px 0;
+    }
   }
 }
 
@@ -53,20 +70,18 @@ body {
 
   transition: 0.4s;
 
+  opacity: 0.2;
   border-radius: 3px;
-  background-color: rgba($color-dark, 0.2);
+  background-color: $color-dark;
 
   font-size: 1rem;
   i {
-    color: rgba($color-light, 0.25);
+    color: $color-light;
   }
   &:hover,
   &:focus {
     padding: 3px 15.5px 18px 15.5px;
 
-    background-color: rgba($color-dark, 1);
-    i {
-      color: rgba($color-light, 1);
-    }
+    opacity: 1;
   }
 }

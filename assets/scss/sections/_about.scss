@@ -2,26 +2,50 @@
   @include lg-min {
     padding: 105px 0 90px;
   }
-  // @include xl-lg {
-  //   padding: 138px 0 122px;
-  // }
+  @include lg-md {
+    padding: 105px 0 75px;
+  }
+  @include md-sm {
+    padding: 90px 0 60px;
+  }
+  @include sm {
+    padding: 90px 0 45px;
+  }
   &-title {
-    margin: 0 0 45px 0;
-
     text-align: center;
 
     color: $color-dark;
 
     font-family: $font-header;
     font-size: 2rem;
+
+    @include lg-min {
+      margin: 0 0 45px 0;
+    }
+    @include lg-md {
+      margin: 0 0 38px 0;
+    }
+    @include md-sm {
+      margin: 0 0 30px 0;
+    }
+    @include sm {
+      margin: 0 0 23px 0;
+    }
   }
   &-progress {
     &__title {
+      color: $color-dark;
+
       font-family: $font-header;
       font-size: 1.125rem;
     }
     &__block {
       margin-bottom: 30px;
+      &:first-of-type {
+        @include lg {
+          margin-top: 3rem;
+        }
+      }
     }
   }
   p {
@@ -33,5 +57,11 @@
     background-color: $color-accent;
 
     font-family: $font-main;
+  }
+}
+
+.progress {
+  @include lg-min {
+    margin-left: 1px;
   }
 }
