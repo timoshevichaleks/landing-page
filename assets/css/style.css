@@ -70,6 +70,10 @@
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
+.progress-bar {
+  background-color: #ee3b24;
+  font-family: "Roboto", sans-serif;
+}
 
 .header {
   position: fixed;
@@ -119,20 +123,6 @@ body {
 .contacts--button:hover, .contacts--button:focus {
   color: #fefefe;
   background-color: #ee3b24;
-}
-
-.section__title {
-  margin: 0 0 45px 0;
-  text-align: center;
-  color: #010101;
-  font-family: "Roboto Slab", serif;
-  font-size: 2rem;
-}
-.section__description {
-  margin: 0 0 45px 0;
-  text-align: center;
-  color: #545454;
-  font-family: "Roboto", sans-serif;
 }
 
 .back2top {
@@ -190,20 +180,16 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 2rem;
 }
+.about-progress {
+  margin-bottom: 30px;
+}
 .about-progress__title {
   color: #010101;
   font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
 }
-.about-progress__block {
-  margin-bottom: 30px;
-}
 .about p {
   color: #545454;
-  font-family: "Roboto", sans-serif;
-}
-.about-progress-bar__danger {
-  background-color: #ee3b24;
   font-family: "Roboto", sans-serif;
 }
 
@@ -569,6 +555,19 @@ body {
 .contacts {
   color: #fefefe;
 }
+.contacts__title {
+  margin: 0 0 45px 0;
+  text-align: center;
+  color: #010101;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+}
+.contacts__description {
+  margin: 0 0 45px 0;
+  text-align: center;
+  color: #545454;
+  font-family: "Roboto", sans-serif;
+}
 
 .footer {
   background-color: #272727;
@@ -682,7 +681,7 @@ body {
   .header {
     background-color: rgba(1, 1, 1, 0.85);
   }
-  .about-progress__block:first-of-type {
+  .about-progress:first-of-type {
     margin-top: 3rem;
   }
   .advantages__image {
@@ -698,9 +697,6 @@ body {
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
-  .section__title {
-    margin: 0 0 39px 0;
-  }
   .about {
     padding: 105px 0 75px;
   }
@@ -740,11 +736,11 @@ body {
   .contacts {
     padding: 104px 0 59px;
   }
+  .contacts__title {
+    margin: 0 0 39px 0;
+  }
 }
 @media (max-width: 767.8px) {
-  .section__description {
-    margin: 0 0 30px 0;
-  }
   .features-item i {
     font-size: 1.5rem;
   }
@@ -800,11 +796,11 @@ body {
   .advantages-content__text {
     margin: 0 0 30px 0;
   }
-}
-@media (max-width: 767.8px) and (min-width: 576px) {
-  .section__title {
+  .contacts__description {
     margin: 0 0 30px 0;
   }
+}
+@media (max-width: 767.8px) and (min-width: 576px) {
   .about {
     padding: 90px 0 60px;
   }
@@ -844,11 +840,11 @@ body {
   .contacts {
     padding: 90px 0 44px;
   }
+  .contacts__title {
+    margin: 0 0 30px 0;
+  }
 }
 @media (max-width: 575.8px) {
-  .section__title {
-    margin: 0 0 22px 0;
-  }
   .about {
     padding: 90px 0 45px;
   }
@@ -894,5 +890,8 @@ body {
   }
   .contacts {
     padding: 90px 0 29px;
+  }
+  .contacts__title {
+    margin: 0 0 22px 0;
   }
 }

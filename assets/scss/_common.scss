@@ -25,42 +25,6 @@ body {
   }
 }
 
-.section {
-  &__title {
-    margin: 0 0 ($gap * 3) 0;
-
-    text-align: center;
-
-    color: $color-dark;
-
-    font-family: $font-header;
-    font-size: 2rem;
-
-    @include lg-md {
-      margin: 0 0 39px 0;
-    }
-    @include md-sm {
-      margin: 0 0 30px 0;
-    }
-    @include sm {
-      margin: 0 0 22px 0;
-    }
-  }
-  &__description {
-    margin: 0 0 ($gap * 3) 0;
-
-    text-align: center;
-
-    color: $color-gray;
-
-    font-family: $font-main;
-
-    @include md {
-      margin: 0 0 ($gap * 2) 0;
-    }
-  }
-}
-
 .back2top {
   position: fixed;
   right: $gap;

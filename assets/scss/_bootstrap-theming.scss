@@ -97,4 +97,9 @@
   @include lg {
     height: 16px !important;
   }
+  &-bar {
+    background-color: $color-accent;
+
+    font-family: $font-main;
+  }
 }

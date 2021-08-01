@@ -33,28 +33,21 @@
     }
   }
   &-progress {
+    margin-bottom: ($gap * 2);
+    &:first-of-type {
+      @include lg {
+        margin-top: 3rem;
+      }
+    }
     &__title {
       color: $color-dark;
 
       font-family: $font-header;
       font-size: 1.125rem;
     }
-    &__block {
-      margin-bottom: ($gap * 2);
-      &:first-of-type {
-        @include lg {
-          margin-top: 3rem;
-        }
-      }
-    }
   }
   p {
     color: $color-gray;
-
-    font-family: $font-main;
-  }
-  &-progress-bar__danger {
-    background-color: $color-accent;
 
     font-family: $font-main;
   }
