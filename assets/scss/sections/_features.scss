@@ -22,7 +22,7 @@
     font-size: 2rem;
 
     @include lg-min {
-      margin: 0 0 45px 0;
+      margin: 0 0 ($gap * 3) 0;
     }
     @include lg-md {
       margin: 0 0 37px 0;
@@ -35,7 +35,7 @@
     }
   }
   &__description {
-    margin: 0 0 105px 0;
+    margin: 0 0 ($gap * 7) 0;
 
     text-align: center;
 
@@ -148,9 +148,9 @@
     // }
   }
   article:nth-of-type(2) {
-    @include lg-md {
-      margin-top: 84px;
-    }
+    // @include lg-md {
+    //   margin-top: 84px;
+    // }
     @include md {
       margin-top: 76px;
     }

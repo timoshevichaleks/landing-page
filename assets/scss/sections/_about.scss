@@ -1,15 +1,15 @@
 .about {
   @include lg-min {
-    padding: 105px 0 90px;
+    padding: ($gap * 7) 0 ($gap * 6);
   }
   @include lg-md {
-    padding: 105px 0 75px;
+    padding: ($gap * 7) 0 ($gap * 5);
   }
   @include md-sm {
-    padding: 90px 0 60px;
+    padding: ($gap * 6) 0 ($gap * 4);
   }
   @include sm {
-    padding: 90px 0 45px;
+    padding: ($gap * 6) 0 ($gap * 3);
   }
   &-title {
     text-align: center;
@@ -20,7 +20,7 @@
     font-size: 2rem;
 
     @include lg-min {
-      margin: 0 0 45px 0;
+      margin: 0 0 ($gap * 3) 0;
     }
     @include lg-md {
       margin: 0 0 38px 0;
@@ -40,7 +40,7 @@
       font-size: 1.125rem;
     }
     &__block {
-      margin-bottom: 30px;
+      margin-bottom: ($gap * 2);
       &:first-of-type {
         @include lg {
           margin-top: 3rem;
@@ -57,11 +57,5 @@
     background-color: $color-accent;
 
     font-family: $font-main;
-  }
-}
-
-.progress {
-  @include lg-min {
-    margin-left: 1px;
   }
 }

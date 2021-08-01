@@ -1,5 +1,5 @@
 .navbar {
-  padding: 15px 0;
+  padding: $gap 0;
 
   transition: 0.5s;
 
@@ -32,13 +32,13 @@
 }
 
 .nav-item {
-  padding: 0 7.5px;
+  padding: 0 math.div($gap, 2);
 }
 
 .nav-link {
   position: relative;
 
-  padding: 15px 7.5px !important;
+  padding: $gap math.div($gap, 2) !important;
 
   color: $color-light !important;
 
@@ -83,7 +83,7 @@
 }
 
 .navbar-light .navbar-toggler {
-  border-color: $color-light;
+  border-color: rgba($color-light, 0.75);
   &:focus {
     outline: none;
   }

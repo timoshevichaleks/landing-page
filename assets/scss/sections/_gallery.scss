@@ -2,19 +2,19 @@
   min-height: 100vh;
 
   @include lg-min {
-    padding: 105px 0 90px;
+    padding: ($gap * 7) 0 ($gap * 6);
   }
   @include lg-md {
-    padding: 105px 0 75px;
+    padding: ($gap * 7) 0 ($gap * 5);
   }
   @include md-sm {
-    padding: 90px 0 60px;
+    padding: ($gap * 6) 0 ($gap * 4);
   }
   @include sm {
     padding: 89px 0 45px;
   }
   &__title {
-    margin: 0 0 45px 0;
+    margin: 0 0 ($gap * 3) 0;
 
     text-align: center;
 
@@ -41,18 +41,18 @@
     font-family: $font-main;
 
     @include md-min {
-      margin: 0 0 45px 0;
+      margin: 0 0 ($gap * 3) 0;
     }
     @include md {
-      margin: 0 0 30px 0;
+      margin: 0 0 ($gap * 2) 0;
     }
   }
   &-content {
     max-width: 1920px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: $gap;
+    padding-left: $gap;
     // display: grid;
     // grid-template-areas: "a1 a2 a3 a4" "a5 a6 a7 a8";
     // grid-template-columns: repeat(4, 1fr);
@@ -63,7 +63,7 @@
     padding: 0 5px 10px 5px;
 
     @include sm {
-      padding: 0 0 15px;
+      padding: 0 0 $gap;
     }
   }
   &-item {
@@ -133,8 +133,8 @@
         align-items: center;
         justify-content: center;
 
-        width: 45px;
-        height: 45px;
+        width: ($gap * 3);
+        height: ($gap * 3);
 
         transform: translateX(-50%);
 
@@ -153,9 +153,3 @@
     }
   }
 }
-
-// @for $i from 1 through 9 {
-//   .gallery-item:nth-of-type(#{$i}) {
-//     grid-area: a#{$i};
-//   }
-// }
