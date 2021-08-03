@@ -65,8 +65,6 @@
     @include sm {
       padding: 0 0 $gap;
     }
-  }
-  &-item {
     &__wrapper {
       position: relative;
 
@@ -81,7 +79,7 @@
         .gallery-image {
           transform: scale(1.8);
         }
-        .gallery-item__caption {
+        .gallery-article__caption {
           h5 {
             bottom: 30px;
 

@@ -299,7 +299,7 @@ body {
 .gallery-article {
   padding: 0 5px 10px 5px;
 }
-.gallery-item__wrapper {
+.gallery-article__wrapper {
   position: relative;
   overflow: hidden;
   min-height: 200px;
@@ -310,37 +310,37 @@ body {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
-.gallery-item__wrapper:hover .gallery-image, .gallery-item__wrapper:focus .gallery-image {
+.gallery-article__wrapper:hover .gallery-image, .gallery-article__wrapper:focus .gallery-image {
   -webkit-transform: scale(1.8);
       -ms-transform: scale(1.8);
           transform: scale(1.8);
 }
-.gallery-item__wrapper:hover .gallery-item__caption h5, .gallery-item__wrapper:focus .gallery-item__caption h5 {
+.gallery-article__wrapper:hover .gallery-article__caption h5, .gallery-article__wrapper:focus .gallery-article__caption h5 {
   bottom: 30px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.gallery-item__wrapper:hover .gallery-item__caption i, .gallery-item__wrapper:focus .gallery-item__caption i {
+.gallery-article__wrapper:hover .gallery-article__caption i, .gallery-article__wrapper:focus .gallery-article__caption i {
   top: 30px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.gallery-item__caption {
+.gallery-article__caption {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
-.gallery-item__caption:hover, .gallery-item__caption:focus {
+.gallery-article__caption:hover, .gallery-article__caption:focus {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   background-color: rgba(1, 1, 1, 0.8);
 }
-.gallery-item__caption h5 {
+.gallery-article__caption h5 {
   position: absolute;
   bottom: -50px;
   display: block;
@@ -352,7 +352,7 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
 }
-.gallery-item__caption i {
+.gallery-article__caption i {
   position: absolute;
   top: -50px;
   left: 50%;
