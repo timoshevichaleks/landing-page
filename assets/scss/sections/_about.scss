@@ -1,4 +1,9 @@
 .about {
+  display: flex;
+  align-items: center;
+
+  min-height: 100vh;
+
   @include lg-min {
     padding: ($gap * 7) 0 ($gap * 6);
   }

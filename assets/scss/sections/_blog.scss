@@ -1,4 +1,7 @@
 .blog {
+  display: flex;
+  align-items: center;
+
   min-height: 100vh;
 
   background-color: rgba($color-gray, 0.1);
